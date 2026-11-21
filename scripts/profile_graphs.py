@@ -40,11 +40,10 @@ C = {
     "body": "#E8ECF1",
     "sub": "#A3ACBA",
     "muted": "#6B7787",
-    "mint": "#8FE3C0",
-    "blue": "#6EA8FE",
-    "amber": "#F1B45B",
+    "accent": "#6667AB",     # 포인트 컬러 rgb(102, 103, 171)
+    "accent_hi": "#8F90D4",  # 작은 글자·선용 밝은 톤
 }
-HEAT = ["#1B222C", "#1F4A3E", "#2E7A62", "#4FB592", "#8FE3C0"]
+HEAT = ["#1B1E27", "#2F3052", "#46477B", "#6667AB", "#9596D6"]
 WEEKDAYS_MON_FIRST = ["월", "화", "수", "목", "금", "토", "일"]
 
 QUERY = """
@@ -184,7 +183,7 @@ def card(w: int, h: int, title: str, desc: str, body: list[str], defs: str = "")
 
 def header(title: str, subtitle: str, x=56, y=58) -> list[str]:
     return [
-        f'<rect x="{x}" y="{y - 13}" width="10" height="10" rx="2.5" fill="{C["mint"]}"/>',
+        f'<rect x="{x}" y="{y - 13}" width="10" height="10" rx="2.5" fill="{C["accent"]}"/>',
         text(x + 20, y - 2, title, 22, C["text"], 700),
         text(x, y + 26, subtitle, 14, C["muted"]),
     ]
@@ -223,7 +222,7 @@ def render_overview(data: dict, st: dict) -> str:
 
     inset = (1 - fill) / 2
     body = []
-    body += header("지난 1년의 기록", "GitHub 기여 · 칸이 높을수록 많이 남긴 날")
+    body += header("지난 1년", "GitHub 기여")
 
     poly = []
     for w, d, count in cells:
@@ -287,11 +286,11 @@ def render_overview(data: dict, st: dict) -> str:
     for i, col in enumerate(HEAT):
         body.append(f'<rect x="{lx + 34 + i * 18}" y="{ly}" width="13" height="13" rx="3" fill="{col}"/>')
     body.append(text(lx + 34 + 5 * 18 + 6, ly + 11, "많음", 12, C["muted"]))
-    body.append(text(W - 56, 56, f"{data['generated']} 기준 · 매일 자동 갱신", 12, C["muted"], anchor="end"))
+    body.append(text(W - 56, 56, f"{data['generated']} 기준", 12, C["muted"], anchor="end"))
 
     desc = (f"지난 1년 GitHub 기여 {st['total']}건을 3D 캘린더로 표현. 최장 연속 {st['longest']}일, "
             f"기록을 남긴 날 {st['active']}일.")
-    return card(W, H, "지난 1년의 기록", desc, body)
+    return card(W, H, "지난 1년 GitHub 기여", desc, body)
 
 
 # ---------------------------------------------------------------- 레이더 공통
@@ -314,8 +313,8 @@ def radar(title, subtitle, labels, values, sublabels, dot_colors, note, desc) ->
         body.append(f'<path d="M{f(cx)} {f(cy)}L{f(x)} {f(y)}" stroke="{C["line"]}"/>')
 
     data_pts = [at(i, R * max(v, 0.035)) for i, v in enumerate(values)]
-    body.append(f'<polygon points="{pts(data_pts)}" fill="{C["mint"]}" fill-opacity=".2" '
-                f'stroke="{C["mint"]}" stroke-width="2.2" stroke-linejoin="round"/>')
+    body.append(f'<polygon points="{pts(data_pts)}" fill="{C["accent"]}" fill-opacity=".32" '
+                f'stroke="{C["accent_hi"]}" stroke-width="2.2" stroke-linejoin="round"/>')
     for (x, y), col in zip(data_pts, dot_colors):
         body.append(f'<circle cx="{f(x)}" cy="{f(y)}" r="5" fill="{col}" stroke="{C["bg"]}" stroke-width="2"/>')
 
@@ -348,9 +347,9 @@ def render_weekday(data: dict, st: dict) -> str:
     note = (f"가장 활발한 요일 · {WEEKDAYS_MON_FIRST[best]}요일 ({sums[best] * 100 / total:.0f}%)"
             if sum(sums) else "아직 기록이 없습니다")
     return radar(
-        "요일별 리듬", "지난 1년 기여를 요일별로 모았습니다",
+        "요일별", "지난 1년 기여",
         WEEKDAYS_MON_FIRST, [s / top for s in sums], [f"{s:,}건" for s in sums],
-        [C["mint"]] * 7, note,
+        [C["accent_hi"]] * 7, note,
         "요일별 기여 수 7각형 레이더. " + ", ".join(f"{d} {s}" for d, s in zip(WEEKDAYS_MON_FIRST, sums)),
     )
 
@@ -364,12 +363,12 @@ def render_languages(data: dict, st: dict) -> str:
         langs = langs + [{"name": "–", "size": 0, "color": C["muted"]}] * (3 - len(langs))
     top = max(l["size"] for l in langs) or 1
     return radar(
-        "언어 지형", "공개 저장소의 코드 용량 기준",
+        "언어", "공개 저장소 코드 비중",
         [l["name"] for l in langs],
         [math.sqrt(l["size"] / top) for l in langs],
         [f"{l['size'] * 100 / total:.1f}%" for l in langs],
-        [l["color"] for l in langs],
-        f"공개 저장소 {data.get('public_repos', 0)}곳 · 포크 제외 · 축 길이는 비중의 제곱근",
+        [C["accent_hi"]] * len(langs),
+        f"공개 저장소 {data.get('public_repos', 0)}곳 기준",
         "공개 저장소 언어 비중 레이더. " + ", ".join(
             f"{l['name']} {l['size'] * 100 / total:.1f}%" for l in langs if l["size"]),
     )
@@ -407,7 +406,7 @@ def render_monthly(data: dict, st: dict) -> str:
     xs = [left + (right - left) * i / 11 for i in range(12)]
     ys = [base - (base - top) * v / nice for v in vals]
 
-    body = header("월별 흐름", "최근 12개월, 달마다 남긴 기여")
+    body = header("월별", "최근 12개월 기여")
     avg = sum(vals) / 12
     body.append(text(W - 56, 46, f"{sum(vals):,}건", 28, C["text"], 700, "end"))
     body.append(text(W - 56, 72, f"12개월 합계 · 월평균 {avg:.0f}건", 13, C["muted"], anchor="end"))
@@ -432,13 +431,13 @@ def render_monthly(data: dict, st: dict) -> str:
         d += f" C{f(c1[0])} {f(c1[1])} {f(c2[0])} {f(c2[1])} {f(p2[0])} {f(p2[1])}"
     area = d + f" L{f(xs[-1])} {f(base)} L{f(xs[0])} {f(base)} Z"
     body.append(f'<path d="{area}" fill="url(#mfill)"/>')
-    body.append(f'<path d="{d}" fill="none" stroke="{C["mint"]}" stroke-width="2.5" stroke-linecap="round"/>')
+    body.append(f'<path d="{d}" fill="none" stroke="{C["accent_hi"]}" stroke-width="2.5" stroke-linecap="round"/>')
 
     best = max(range(12), key=lambda i: vals[i])
     for i, ((yr, mo), v, x, yv) in enumerate(zip(months, vals, xs, ys)):
         is_best = i == best and v > 0
         body.append(f'<circle cx="{f(x)}" cy="{f(yv)}" r="{6 if is_best else 4}" '
-                    f'fill="{C["amber"] if is_best else C["mint"]}" stroke="{C["bg"]}" stroke-width="2"/>')
+                    f'fill="{C["text"] if is_best else C["accent_hi"]}" stroke="{C["bg"]}" stroke-width="2"/>')
         body.append(text(x, yv - 14, f"{v:,}", 13 if is_best else 12,
                          C["text"] if is_best else C["sub"], 700 if is_best else None, "middle"))
         body.append(text(x, base + 28, f"{mo}월", 13, C["sub"], anchor="middle"))
@@ -446,10 +445,10 @@ def render_monthly(data: dict, st: dict) -> str:
             body.append(text(x, base + 46, str(yr), 11, C["muted"], anchor="middle"))
 
     defs = (f'<linearGradient id="mfill" x1="0" y1="0" x2="0" y2="1">'
-            f'<stop offset="0" stop-color="{C["mint"]}" stop-opacity=".32"/>'
-            f'<stop offset="1" stop-color="{C["mint"]}" stop-opacity="0"/></linearGradient>')
+            f'<stop offset="0" stop-color="{C["accent"]}" stop-opacity=".45"/>'
+            f'<stop offset="1" stop-color="{C["accent"]}" stop-opacity="0"/></linearGradient>')
     desc = "최근 12개월 월별 기여 수: " + ", ".join(f"{mo}월 {v}" for (_, mo), v in zip(months, vals))
-    return card(W, H, "월별 흐름", desc, body, defs)
+    return card(W, H, "월별 기여", desc, body, defs)
 
 
 # ---------------------------------------------------------------- main
