@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc" xml:lang="ko">
   <title id="title">지난 1년 GitHub 기여</title>
-  <desc id="desc">지난 1년 GitHub 기여 1057건을 3D 캘린더로 표현. 최장 연속 20일, 기록을 남긴 날 105일.</desc>
+  <desc id="desc">지난 1년 GitHub 기여 1060건을 3D 캘린더로 표현. 최장 연속 20일, 기록을 남긴 날 105일.</desc>
   <style>text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', sans-serif; } .mono { font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }</style>
 
   <rect width="1280" height="560" rx="20" fill="#0F1218"/>
@@ -586,9 +586,9 @@
     <polygon points="1072.5,493.4 1087.8,496.1 1087.8,478.7 1072.5,476" fill="#141422"/>
     <polygon points="1094.6,490.4 1087.8,496.1 1087.8,478.7 1094.6,472.9" fill="#1D1E33"/>
     <polygon points="1079.3,470.2 1094.6,472.9 1087.8,478.7 1072.5,476" fill="#2F3052"/>
-    <polygon points="1091.7,496.8 1107,499.5 1107,470.4 1091.7,467.7" fill="#1D1E34"/>
-    <polygon points="1113.8,493.8 1107,499.5 1107,470.4 1113.8,464.7" fill="#2B2C4C"/>
-    <polygon points="1098.5,462 1113.8,464.7 1107,470.4 1091.7,467.7" fill="#46477B"/>
+    <polygon points="1091.7,496.8 1107,499.5 1107,463.8 1091.7,461.1" fill="#1D1E34"/>
+    <polygon points="1113.8,493.8 1107,499.5 1107,463.8 1113.8,458.1" fill="#2B2C4C"/>
+    <polygon points="1098.5,455.3 1113.8,458.1 1107,463.8 1091.7,461.1" fill="#46477B"/>
   </g>
   <text x="130.5" y="283.6" font-size="12" fill="#6B7787" text-anchor="end">월</text>
   <text x="113.5" y="298" font-size="12" fill="#6B7787" text-anchor="end">수</text>
@@ -606,7 +606,7 @@
   <text x="950.9" y="486.3" font-size="12" fill="#6B7787">10월</text>
   <text x="1046.9" y="503.3" font-size="12" fill="#6B7787">11월</text>
   <text x="56" y="122" font-size="14" fill="#6B7787">지난 1년 기여</text>
-  <text x="56" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">1,057<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">건</tspan></text>
+  <text x="56" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">1,060<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">건</tspan></text>
   <path d="M320 112V170" stroke="#232B36"/>
   <text x="348" y="122" font-size="14" fill="#6B7787">가장 많이 남긴 날</text>
   <text x="348" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">51<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">건 · 11월 15일</tspan></text>
