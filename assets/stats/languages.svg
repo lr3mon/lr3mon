@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="540" viewBox="0 0 640 540" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">언어 지형</title>
+  <desc id="desc">공개 저장소 언어 비중 레이더. Python 45.0%, Swift 29.5%, TypeScript 6.6%, Rust 5.8%, JavaScript 4.0%, CSS 3.6%</desc>
+  <style>text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', sans-serif; } .mono { font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }</style>
+
+  <rect width="640" height="540" rx="20" fill="#0F1218"/>
+  <rect x="40" y="45" width="10" height="10" rx="2.5" fill="#8FE3C0"/>
+  <text x="60" y="56" font-size="22" fill="#F3F5F8" font-weight="700">언어 지형</text>
+  <text x="40" y="84" font-size="14" fill="#6B7787">공개 저장소의 코드 용량 기준</text>
+  <polygon points="320,257.5 349.9,274.8 349.9,309.2 320,326.5 290.1,309.2 290.1,274.8" fill="none" stroke="#232B36"/>
+  <polygon points="320,223 379.8,257.5 379.8,326.5 320,361 260.2,326.5 260.2,257.5" fill="none" stroke="#232B36"/>
+  <polygon points="320,188.5 409.6,240.2 409.6,343.8 320,395.5 230.4,343.8 230.4,240.2" fill="none" stroke="#232B36"/>
+  <polygon points="320,154 439.5,223 439.5,361 320,430 200.5,361 200.5,223" fill="none" stroke="#2C3540"/>
+  <path d="M320 292L320 154" stroke="#232B36"/>
+  <path d="M320 292L439.5 223" stroke="#232B36"/>
+  <path d="M320 292L439.5 361" stroke="#232B36"/>
+  <path d="M320 292L320 430" stroke="#232B36"/>
+  <path d="M320 292L200.5 361" stroke="#232B36"/>
+  <path d="M320 292L200.5 223" stroke="#232B36"/>
+  <polygon points="320,154 416.8,236.1 365.7,318.4 320,341.8 284.6,312.4 286.1,272.4" fill="#8FE3C0" fill-opacity=".2" stroke="#8FE3C0" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="320" cy="154" r="5" fill="#3572A5" stroke="#0F1218" stroke-width="2"/>
+  <circle cx="416.8" cy="236.1" r="5" fill="#F05138" stroke="#0F1218" stroke-width="2"/>
+  <circle cx="365.7" cy="318.4" r="5" fill="#3178c6" stroke="#0F1218" stroke-width="2"/>
+  <circle cx="320" cy="341.8" r="5" fill="#dea584" stroke="#0F1218" stroke-width="2"/>
+  <circle cx="284.6" cy="312.4" r="5" fill="#f1e05a" stroke="#0F1218" stroke-width="2"/>
+  <circle cx="286.1" cy="272.4" r="5" fill="#663399" stroke="#0F1218" stroke-width="2"/>
+  <text x="320" y="114" font-size="16" fill="#E8ECF1" font-weight="600" text-anchor="middle">Python</text>
+  <text x="320" y="132" font-size="13" fill="#6B7787" text-anchor="middle">45.0%</text>
+  <text x="462" y="208" font-size="16" fill="#E8ECF1" font-weight="600" text-anchor="start">Swift</text>
+  <text x="462" y="226" font-size="13" fill="#6B7787" text-anchor="start">29.5%</text>
+  <text x="462" y="372" font-size="16" fill="#E8ECF1" font-weight="600" text-anchor="start">TypeScript</text>
+  <text x="462" y="390" font-size="13" fill="#6B7787" text-anchor="start">6.6%</text>
+  <text x="320" y="466" font-size="16" fill="#E8ECF1" font-weight="600" text-anchor="middle">Rust</text>
+  <text x="320" y="484" font-size="13" fill="#6B7787" text-anchor="middle">5.8%</text>
+  <text x="178" y="372" font-size="16" fill="#E8ECF1" font-weight="600" text-anchor="end">JavaScript</text>
+  <text x="178" y="390" font-size="13" fill="#6B7787" text-anchor="end">4.0%</text>
+  <text x="178" y="208" font-size="16" fill="#E8ECF1" font-weight="600" text-anchor="end">CSS</text>
+  <text x="178" y="226" font-size="13" fill="#6B7787" text-anchor="end">3.6%</text>
+  <text x="40" y="516" font-size="13" fill="#6B7787">공개 저장소 11곳 · 포크 제외 · 축 길이는 비중의 제곱근</text>
+</svg>
