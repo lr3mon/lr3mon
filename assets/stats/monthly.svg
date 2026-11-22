@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc" xml:lang="ko">
   <title id="title">월별 기여</title>
-  <desc id="desc">최근 12개월 월별 기여 수: 12월 40, 1월 29, 2월 3, 3월 0, 4월 0, 5월 34, 6월 14, 7월 30, 8월 243, 9월 257, 10월 218, 11월 202</desc>
+  <desc id="desc">최근 12개월 월별 기여 수: 12월 40, 1월 29, 2월 3, 3월 0, 4월 0, 5월 34, 6월 14, 7월 30, 8월 243, 9월 257, 10월 218, 11월 215</desc>
   <style>text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', sans-serif; } .mono { font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }</style>
   <defs><linearGradient id="mfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6667AB" stop-opacity=".45"/><stop offset="1" stop-color="#6667AB" stop-opacity="0"/></linearGradient></defs>
   <rect width="1280" height="360" rx="20" fill="#0F1218"/>
   <rect x="56" y="45" width="10" height="10" rx="2.5" fill="#6667AB"/>
   <text x="76" y="56" font-size="22" fill="#F3F5F8" font-weight="700">월별</text>
   <text x="56" y="84" font-size="14" fill="#6B7787">최근 12개월 기여</text>
-  <text x="1224" y="46" font-size="28" fill="#F3F5F8" font-weight="700" text-anchor="end">1,070건</text>
-  <text x="1224" y="72" font-size="13" fill="#6B7787" text-anchor="end">12개월 합계 · 월평균 89건</text>
+  <text x="1224" y="46" font-size="28" fill="#F3F5F8" font-weight="700" text-anchor="end">1,083건</text>
+  <text x="1224" y="72" font-size="13" fill="#6B7787" text-anchor="end">12개월 합계 · 월평균 90건</text>
   <path d="M96 284H1216" stroke="#232B36"/>
   <text x="80" y="288" font-size="12" fill="#6B7787" text-anchor="end">0</text>
   <path d="M96 203H1216" stroke="#232B36" stroke-dasharray="3 5"/>
   <text x="80" y="207" font-size="12" fill="#6B7787" text-anchor="end">150</text>
   <path d="M96 122H1216" stroke="#232B36" stroke-dasharray="3 5"/>
   <text x="80" y="126" font-size="12" fill="#6B7787" text-anchor="end">300</text>
-  <path d="M96 262.4 C113 263.4 163.9 265 197.8 268.3 C231.8 271.7 265.7 279.8 299.6 282.4 C333.6 284 367.5 283.7 401.5 284 C435.4 284 469.3 284 503.3 284 C537.2 280.9 571.2 266.9 605.1 265.6 C639 264.4 673 276.1 706.9 276.4 C740.8 276.8 774.8 284 808.7 267.8 C842.7 247.2 876.6 173.2 910.5 152.8 C944.5 132.3 978.4 143 1012.4 145.2 C1046.3 147.5 1080.2 161.3 1114.2 166.3 C1148.1 171.2 1199 173.5 1216 174.9 L1216 284 L96 284 Z" fill="url(#mfill)"/>
-  <path d="M96 262.4 C113 263.4 163.9 265 197.8 268.3 C231.8 271.7 265.7 279.8 299.6 282.4 C333.6 284 367.5 283.7 401.5 284 C435.4 284 469.3 284 503.3 284 C537.2 280.9 571.2 266.9 605.1 265.6 C639 264.4 673 276.1 706.9 276.4 C740.8 276.8 774.8 284 808.7 267.8 C842.7 247.2 876.6 173.2 910.5 152.8 C944.5 132.3 978.4 143 1012.4 145.2 C1046.3 147.5 1080.2 161.3 1114.2 166.3 C1148.1 171.2 1199 173.5 1216 174.9" fill="none" stroke="#8F90D4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M96 262.4 C113 263.4 163.9 265 197.8 268.3 C231.8 271.7 265.7 279.8 299.6 282.4 C333.6 284 367.5 283.7 401.5 284 C435.4 284 469.3 284 503.3 284 C537.2 280.9 571.2 266.9 605.1 265.6 C639 264.4 673 276.1 706.9 276.4 C740.8 276.8 774.8 284 808.7 267.8 C842.7 247.2 876.6 173.2 910.5 152.8 C944.5 132.3 978.4 143 1012.4 145.2 C1046.3 147.5 1080.2 162.5 1114.2 166.3 C1148.1 170.1 1199 167.6 1216 167.9 L1216 284 L96 284 Z" fill="url(#mfill)"/>
+  <path d="M96 262.4 C113 263.4 163.9 265 197.8 268.3 C231.8 271.7 265.7 279.8 299.6 282.4 C333.6 284 367.5 283.7 401.5 284 C435.4 284 469.3 284 503.3 284 C537.2 280.9 571.2 266.9 605.1 265.6 C639 264.4 673 276.1 706.9 276.4 C740.8 276.8 774.8 284 808.7 267.8 C842.7 247.2 876.6 173.2 910.5 152.8 C944.5 132.3 978.4 143 1012.4 145.2 C1046.3 147.5 1080.2 162.5 1114.2 166.3 C1148.1 170.1 1199 167.6 1216 167.9" fill="none" stroke="#8F90D4" stroke-width="2.5" stroke-linecap="round"/>
   <circle cx="96" cy="262.4" r="4" fill="#8F90D4" stroke="#0F1218" stroke-width="2"/>
   <text x="96" y="248.4" font-size="12" fill="#A3ACBA" text-anchor="middle">40</text>
   <text x="96" y="312" font-size="13" fill="#A3ACBA" text-anchor="middle">12월</text>
@@ -52,7 +52,7 @@
   <circle cx="1114.2" cy="166.3" r="4" fill="#8F90D4" stroke="#0F1218" stroke-width="2"/>
   <text x="1114.2" y="152.3" font-size="12" fill="#A3ACBA" text-anchor="middle">218</text>
   <text x="1114.2" y="312" font-size="13" fill="#A3ACBA" text-anchor="middle">10월</text>
-  <circle cx="1216" cy="174.9" r="4" fill="#8F90D4" stroke="#0F1218" stroke-width="2"/>
-  <text x="1216" y="160.9" font-size="12" fill="#A3ACBA" text-anchor="middle">202</text>
+  <circle cx="1216" cy="167.9" r="4" fill="#8F90D4" stroke="#0F1218" stroke-width="2"/>
+  <text x="1216" y="153.9" font-size="12" fill="#A3ACBA" text-anchor="middle">215</text>
   <text x="1216" y="312" font-size="13" fill="#A3ACBA" text-anchor="middle">11월</text>
 </svg>
