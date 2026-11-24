@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc" xml:lang="ko">
   <title id="title">지난 1년 GitHub 기여</title>
-  <desc id="desc">지난 1년 GitHub 기여 1085건을 3D 캘린더로 표현. 최장 연속 20일, 기록을 남긴 날 106일.</desc>
+  <desc id="desc">지난 1년 GitHub 기여 1088건을 3D 캘린더로 표현. 최장 연속 20일, 기록을 남긴 날 107일.</desc>
   <style>text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', sans-serif; } .mono { font-family: 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }</style>
 
   <rect width="1280" height="560" rx="20" fill="#0F1218"/>
@@ -511,6 +511,9 @@
     <polygon points="981.1,429 996.4,431.7 989.6,437.5 974.3,434.7" fill="#46477B"/>
     <polygon points="934.2,453.3 949.5,456 942.7,461.7 927.4,459" fill="#1B1E27"/>
     <polygon points="887.3,453.7 902.6,456.4 895.8,462.1 880.5,459.4" fill="#1B1E27"/>
+    <polygon points="1134.2,460.8 1149.5,463.5 1149.5,442.6 1134.2,439.9" fill="#141422"/>
+    <polygon points="1156.3,457.8 1149.5,463.5 1149.5,442.6 1156.3,436.9" fill="#1D1E33"/>
+    <polygon points="1141,434.2 1156.3,436.9 1149.5,442.6 1134.2,439.9" fill="#2F3052"/>
     <polygon points="1087.3,461.2 1102.6,463.9 1102.6,446.5 1087.3,443.8" fill="#141422"/>
     <polygon points="1109.4,458.2 1102.6,463.9 1102.6,446.5 1109.4,440.7" fill="#1D1E33"/>
     <polygon points="1094.1,438 1109.4,440.7 1102.6,446.5 1087.3,443.8" fill="#2F3052"/>
@@ -537,6 +540,7 @@
     <polygon points="1019.5,435.8 1034.8,438.5 1028,444.3 1012.7,441.5" fill="#46477B"/>
     <polygon points="972.6,460.1 987.9,462.8 981.1,468.5 965.8,465.8" fill="#1B1E27"/>
     <polygon points="925.7,460.5 941,463.2 934.2,468.9 918.9,466.2" fill="#1B1E27"/>
+    <polygon points="1132.5,462.3 1147.8,465 1141,470.7 1125.7,468" fill="#1B1E27"/>
     <polygon points="1078.8,468.4 1094.1,471.1 1094.1,450.2 1078.8,447.5" fill="#141422"/>
     <polygon points="1100.9,465.4 1094.1,471.1 1094.1,450.2 1100.9,444.5" fill="#1D1E33"/>
     <polygon points="1085.6,441.8 1100.9,444.5 1094.1,450.2 1078.8,447.5" fill="#2F3052"/>
@@ -602,7 +606,7 @@
   <text x="931.7" y="482.9" font-size="12" fill="#6B7787">10월</text>
   <text x="1027.7" y="499.9" font-size="12" fill="#6B7787">11월</text>
   <text x="56" y="122" font-size="14" fill="#6B7787">지난 1년 기여</text>
-  <text x="56" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">1,085<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">건</tspan></text>
+  <text x="56" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">1,088<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">건</tspan></text>
   <path d="M320 112V170" stroke="#232B36"/>
   <text x="348" y="122" font-size="14" fill="#6B7787">가장 많이 남긴 날</text>
   <text x="348" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">51<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">건 · 11월 15일</tspan></text>
@@ -611,7 +615,7 @@
   <text x="640" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">20<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">일</tspan></text>
   <path d="M904 112V170" stroke="#232B36"/>
   <text x="932" y="122" font-size="14" fill="#6B7787">기록을 남긴 날</text>
-  <text x="932" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">106<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">일</tspan></text>
+  <text x="932" y="166" fill="#F3F5F8" font-size="40" font-weight="700" letter-spacing="-1">107<tspan font-size="16" font-weight="500" fill="#A3ACBA" dx="6">일</tspan></text>
   <text x="56" y="527" font-size="12" fill="#6B7787">적음</text>
   <rect x="90" y="516" width="13" height="13" rx="3" fill="#1B1E27"/>
   <rect x="108" y="516" width="13" height="13" rx="3" fill="#2F3052"/>
@@ -619,5 +623,5 @@
   <rect x="144" y="516" width="13" height="13" rx="3" fill="#6667AB"/>
   <rect x="162" y="516" width="13" height="13" rx="3" fill="#9596D6"/>
   <text x="186" y="527" font-size="12" fill="#6B7787">많음</text>
-  <text x="1224" y="56" font-size="12" fill="#6B7787" text-anchor="end">2026-11-23 기준</text>
+  <text x="1224" y="56" font-size="12" fill="#6B7787" text-anchor="end">2026-11-24 기준</text>
 </svg>
